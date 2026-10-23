@@ -1,0 +1,5 @@
+pandas
+numpy
+requests
+beautifulsoup4
+# google.colab is provided automatically inside Google Colab (not installable via pip)
