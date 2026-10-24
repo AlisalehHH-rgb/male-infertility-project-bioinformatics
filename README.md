@@ -1,9 +1,24 @@
 # Investigation of Genes Causing Male Infertility Using Bioinformatics Techniques
 
 Graduation project, B.Sc. Biomedical Sciences, Damascus University.
-Author: Ali Saleh. Supervisor: Dr. Marwan Alhalabi.
+Author: Ali Saleh.
 
 A retrospective in silico study of 16 validated male-infertility genes. It re-evaluates ClinVar pathogenic variants by matching each submission to the disease it was registered for, and integrates 13 layers of evidence into a traceable variant-level matrix. The work was carried out along three tracks (a Galaxy/VEP platform track, a Python/Colab programmatic track, and an AI-assisted track) and compared with paired statistics.
+
+
+## Project materials
+
+| Material | Where |
+|---|---|
+| Full thesis (PDF) | [`thesis2/PROJECT_FINAL.pdf`](thesis2/PROJECT_FINAL.pdf) |
+| Interactive website (source) | [`website2/`](website2/) |
+| Website (GitHub Pages, after enabling) | https://alisalehhh-rgb.github.io/male-infertility-project-bioinformatics/ |
+| Google Drive archive (24 folders) | [`docs2/google-drive-links.md`](docs2/google-drive-links.md) |
+| GitHub web-upload guide | [`docs2/PUBLISHING.md`](docs2/PUBLISHING.md) |
+| Figures (51) | [`results2/figures/`](results2/figures/) |
+| Tables (58 CSV) | [`results2/tables/`](results2/tables/) |
+| Strengths & novelty report (English, PDF) | [`docs2/strengths_and_novelty_report_en.pdf`](docs2/strengths_and_novelty_report_en.pdf) |
+| Strengths & novelty report (English, DOCX) | [`docs2/strengths_and_novelty_report_en.docx`](docs2/strengths_and_novelty_report_en.docx) |
 
 ## Why it matters
 - The genetic cause remains unknown in most men with infertility, and in non-obstructive azoospermia in particular.
@@ -27,21 +42,21 @@ A retrospective in silico study of 16 validated male-infertility genes. It re-ev
 ## Pipeline (stages)
 | Stage | Content | Script |
 |---|---|---|
-| S01 | Male Fertility Gene Atlas (MFGA) candidate genes | `src/02_s01_mfga.py` |
-| S01B | Gene-disease validity (moderate or higher evidence) | `src/03_*`, `src/04_*` |
-| S02 / S02B | ClinVar pathogenic / likely pathogenic extraction and phenotype stratification (submission level) | `src/05_*`, `src/06_*`, `src/07_*` |
-| S04 | Ensembl VEP + gnomAD v4 (consequence, allele frequency) | `src/08_*`, `src/09_*` |
-| S06 | GTEx v8 tissue expression | `src/10_*` |
-| S07 | Human Protein Atlas (RNA and immunostaining) | `src/11_*` to `src/13_*` |
-| S05 | Prioritisation (CADD, frequency, disease matching, MANE consequence fix) | `src/14_*` |
-| Checks | Manifest and comparison with earlier results | `src/15_*`, `src/16_*` |
+| S01 | Male Fertility Gene Atlas (MFGA) candidate genes | `src2/02_s01_mfga.py` |
+| S01B | Gene-disease validity (moderate or higher evidence) | `src2/03_*`, `src2/04_*` |
+| S02 / S02B | ClinVar pathogenic / likely pathogenic extraction and phenotype stratification (submission level) | `src2/05_*`, `src2/06_*`, `src2/07_*` |
+| S04 | Ensembl VEP + gnomAD v4 (consequence, allele frequency) | `src2/08_*`, `src2/09_*` |
+| S06 | GTEx v8 tissue expression | `src2/10_*` |
+| S07 | Human Protein Atlas (RNA and immunostaining) | `src2/11_*` to `src2/13_*` |
+| S05 | Prioritisation (CADD, frequency, disease matching, MANE consequence fix) | `src2/14_*` |
+| Checks | Manifest and comparison with earlier results | `src2/15_*`, `src2/16_*` |
 
-The full run is also available as one notebook: `notebooks/Final_Organized_A_full_rerun.ipynb` (Google Colab). The scripts in `src/` are the notebook's code cells, extracted unchanged.
+The full run is also available as one notebook: `notebooks/Final_Organized_A_full_rerun.ipynb` (Google Colab). The scripts in `src2/` are the notebook's code cells, extracted unchanged.
 
 ## Three execution tracks, compared
-1. **Platform track** (`track1_galaxy_vep/`): ClinVar on Galaxy, Ensembl VEP, and an Excel evidence matrix built with traceable formulas.
-2. **Programmatic track** (`src/`, `notebooks/`): the same pipeline in Python on Google Colab. Core values matched track 1 exactly (469/469 CADD scores and 131/131 allele frequencies).
-3. **AI-assisted track** (`track3_ai_tools/`): six AI tools/models received the same plan and were compared with a documented reference: Claude (Opus 5.5), Devin and Gemini 3 Pro with a single command; ChatGPT Plus and OpenCode (DeepSeek-V4-Flash) stage by stage; GPT-6 Astra, ChatGPT Plus and OpenCode on a verification task of 14 variants.
+1. **Platform track** (`track1_galaxy_vep2/`): ClinVar on Galaxy, Ensembl VEP, and an Excel evidence matrix built with traceable formulas.
+2. **Programmatic track** (`src2/`, `notebooks/`): the same pipeline in Python on Google Colab. Core values matched track 1 exactly (469/469 CADD scores and 131/131 allele frequencies).
+3. **AI-assisted track** (`track3_ai_tools2/`): six AI tools/models received the same plan and were compared with a documented reference: Claude (Opus 5.5), Devin and Gemini 3 Pro with a single command; ChatGPT Plus and OpenCode (DeepSeek-V4-Flash) stage by stage; GPT-6 Astra, ChatGPT Plus and OpenCode on a verification task of 14 variants.
 
 ## Key results
 - **177 of 712 (24.9%)** pathogenic variants are registered for male infertility.
@@ -64,25 +79,61 @@ The full run is also available as one notebook: `notebooks/Final_Organized_A_ful
 - **Mathematics and programming:** the Python pipeline, rule logic, formula-driven matrix, paired statistics and the JavaScript statistics engine all rest on mathematical and programming foundations.
 - **Scale:** six chapters, 34 tables, 44 figures, more than 130 references, a 48-sheet Excel matrix and a log of 502 verified files.
 
+
+## Website
+
+The bilingual (Arabic/English), offline prototype is in [`website2/`](website2/). It runs by opening `website2/index.html` directly in any modern browser, without a server or internet connection (external database links aside).
+
+A live GitHub Pages deployment will be available at (after enabling Pages):
+
+**https://alisalehhh-rgb.github.io/male-infertility-project-bioinformatics/**
+
+The site is deployed automatically from `website2/` by [`.github/workflows/pages.yml`](.github/workflows/pages.yml). To enable it: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+![Website preview](docs2/website-preview.png)
+
 ## How to reproduce (Google Colab)
 1. Create a Drive folder named exactly `Final - Google Colab` (the notebook looks for this name).
 2. Open `notebooks/Final_Organized_A_full_rerun.ipynb` in Colab and run the first cell to mount Drive.
-3. Set `FRESH_DOWNLOADS = True` in the setup cell to download all raw files again from the official sources (see `data/README.md`).
+3. Set `FRESH_DOWNLOADS = True` in the setup cell to download all raw files again from the official sources (see `data2/README.md`).
 4. Run the cells in order. Outputs go to stage folders (S01_MFGA, S02_ClinVar, ...).
 
+
+## Google Drive archive
+
+The full execution archive — per-tool prompts, code, logs, intermediate files, final outputs, verification runs, Galaxy history and Colab workspaces — is indexed in [`docs2/google-drive-links.md`](docs2/google-drive-links.md). Each of the 24 folders is described by track, purpose and contents.
+
+Quick access:
+
+- [Final reproducible Colab workspace](https://drive.google.com/drive/folders/1fF-1DaG94izRo2cBH0bt-DuTsgmBwysR?usp=sharing)
+- [Galaxy / VEP / Excel evidence matrix](https://drive.google.com/drive/folders/1dEivqyrz2-DjOUL7vLS14wAa-1ZnCGz8?usp=sharing)
+- [AI-tool comparison folders](track3_ai_tools2/)
+
+GitHub stores the index and the final materials; large raw and intermediate files remain in Google Drive. If you need a citable snapshot, attach a ZIP to a GitHub Release rather than committing raw data.
+
 ## Repository layout
+
 ```
 notebooks/            Colab notebook (full run)
-src/                  Python scripts, one per stage
-track1_galaxy_vep/    Galaxy / VEP files and the Excel evidence matrix
-track3_ai_tools/      the plan given to the AI tools and their outputs
-structural_analysis/  ChimeraX / PyMOL command files and images
-statistics/           statistical scripts and tables
-website/              offline bilingual website prototype
-data/                 final tables and data sources (raw files are downloaded from the official sources)
-docs/                 strengths and novelty report, summaries
-thesis/               project report (PDF)
+src2/                  Python scripts, one per stage
+track1_galaxy_vep2/    Galaxy / VEP notes and links to the Excel evidence matrix
+track3_ai_tools2/      AI-tool plan, comparison notes and Drive links
+structural_analysis2/  ChimeraX / PyMOL notes and links to structural images
+statistics2/           statistical scripts and notes
+website2/              offline bilingual website prototype (GitHub Pages source)
+data2/                 data-source notes (raw files are downloaded from official sources)
+docs2/                 reports, Google Drive index and publishing guide
+results2/              figures (51) and tables (58 CSV) extracted from the thesis
+thesis2/               full project report (PDF)
 ```
+
+## Figures and tables
+
+- [`results2/figures/`](results2/figures/) — 51 images extracted from the thesis source in document order; see `figures_index.csv`.
+- [`results2/tables/`](results2/tables/) — 58 tables exported as CSV (UTF-8 with BOM, Excel-friendly); see `tables_index.csv`.
+- The PDF in [`thesis2/`](thesis2/) remains the authoritative formatted version.
+- Structural images used by the website are in [`website2/img/chimerax/`](website2/img/chimerax/) and [`website2/img/pymol/`](website2/img/pymol/).
 
 ## License and citation
 Code: MIT (see `LICENSE`). Citation details: `CITATION.cff`.
+
