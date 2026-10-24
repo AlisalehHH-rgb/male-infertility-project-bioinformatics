@@ -1,0 +1,19 @@
+﻿المجموعة,الزوج,كلاهما,الأولى / الثانية فقط,p الخام,p بعد Holm,Jaccard
+H,ChatGPT Plus – Claude,6,5 / 12,0.1435,1.0000,0.261
+H,ChatGPT Plus – Devin,6,5 / 11,0.2101,1.0000,0.273
+H,ChatGPT Plus – OpenCode,6,5 / 16,0.0266,0.4523,0.222
+H,Claude – Devin,15,3 / 2,1.0000,1.0000,0.750
+H,Claude – OpenCode,15,3 / 7,0.3438,1.0000,0.600
+H,Devin – OpenCode,16,1 / 6,0.1250,1.0000,0.696
+C,ChatGPT Plus – Claude,5,5 / 13,0.0963,1.0000,0.217
+C,ChatGPT Plus – Devin,5,5 / 12,0.1435,1.0000,0.227
+C,ChatGPT Plus – OpenCode,4,6 / 16,0.0525,0.7347,0.154
+C,Claude – Devin,15,3 / 2,1.0000,1.0000,0.750
+C,Claude – OpenCode,13,5 / 7,0.7744,1.0000,0.520
+C,Devin – OpenCode,12,5 / 8,0.5811,1.0000,0.480
+M,ChatGPT Plus – Claude,7,1 / 8,0.0391,0.6250,0.438
+M,ChatGPT Plus – Devin,7,1 / 8,0.0391,0.6250,0.438
+M,ChatGPT Plus – OpenCode,7,1 / 11,0.0063,0.1143,0.368
+M,Claude – Devin,14,1 / 1,1.0000,1.0000,0.875
+M,Claude – OpenCode,13,2 / 5,0.4531,1.0000,0.650
+M,Devin – OpenCode,13,2 / 5,0.4531,1.0000,0.650
