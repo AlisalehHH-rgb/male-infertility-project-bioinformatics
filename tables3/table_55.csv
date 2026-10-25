@@ -1,0 +1,21 @@
+﻿الأمر,المرحلة,وظيفته في الكود
+drive.mount('/content/drive'),كل المراحل,ربط الدفتر بحساب Google Drive حتى تُحفظ المخرجات خارج الخادم المؤقت.
+os.makedirs(...) / os.path.join(...),كل المراحل,إنشاء مجلد لكل مرحلة وبناء مسارات الملفات.
+"requests.get(url, stream=True, timeout=...)",S02 وS06 وS07,تنزيل ملف variant_summary من ClinVar وملف GTEx وملفات HPA.
+"pd.read_csv(..., sep='\t', compression='gzip', chunksize=...)",S02 وS06,قراءة الملفات الكبيرة المضغوطة على أجزاء دون استنفاد الذاكرة.
+df[...].isin(GENES) و str.contains(...),S02,ترشيح المتغيرات على الجينات وعلى التصنيف السريري، وفصل التفسيرات المتعارضة.
+"re.search(INFERT, condition, re.I)",S02B,البحث عن كلمات العقم في قائمة الأمراض المسجلة لكل متغير.
+str.split(' | ').explode().value_counts(),S02B,تفكيك قائمة الأمراض إلى عناصر وعدّ تكرار كل منها للمراجعة.
+pd.crosstab(...),S02B وS04,جداول توزيع الفئات، مثل فئة المرض لكل جين وتوفر CADD لكل نوع.
+"requests.post(SERVER + '/vep/homo_sapiens/region', data=json.dumps(...))",S04,إرسال المتغيرات على دفعات إلى واجهة Ensembl VEP البرمجية.
+time.sleep(...) مع ترويسة Retry-After,S04 وS07,احترام حدود الطلبات وإعادة المحاولة عند الفشل المؤقت.
+"requests.post(GQL, json={'query': QUERY, ...})",S04,الاستعلام عن ترددات كل متغير من واجهة gnomAD (GraphQL).
+np.where(...),S04,تصنيف المتغير نقطيًا أو إدخالًا/حذفًا لفحص توفر CADD.
+tau_index(tpm),S06,حساب مؤشر Tau لتخصص التعبير في نسيج واحد.
+ET.fromstring(xml),S07,قراءة ملفات HPA بصيغة XML واستخراج الصبغ المناعي في الخصية.
+"d.sort_values(['Gene', 'Status_rank', 'Severity_tier', 'Review_stars', 'Absent_gnomAD', 'CADD_PHRED'])",S05,الترتيب متعدد المعايير داخل كل جين.
+d.groupby('Gene').head(TOP_N),S05,اختيار أول ثلاثة متغيرات في كل جين.
+hashlib.sha256(...).hexdigest(),كل المراحل,حساب البصمة الرقمية لكل ملف مُدخل أو ناتج.
+"json.dump(provenance, ...)",كل المراحل,كتابة ملف المصدر: الملف المُدخل وبصمته، والخدمة وإصدارها، والمعاملات.
+df.to_csv(...),كل المراحل,حفظ جداول النتائج وسجل الحالات التي تعذرت معالجتها.
+zipfile.ZipFile(...),S01 وS02,ضغط مخرجات المرحلة في ملف واحد.

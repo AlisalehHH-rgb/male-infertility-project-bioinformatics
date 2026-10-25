@@ -1,0 +1,8 @@
+﻿الأداة,الإصدار أو النموذج,الجهة,التفاصيل,المصدر الرسمي
+Claude,Claude Opus 5.5,Anthropic,نموذج لغوي كبير مبني على المحوّل مع وضع تفكير ممتد واستخدام أدوات؛ نفّذ الخطة كاملة بأمر واحد.,https://docs.anthropic.com/en/docs/about-claude/models/overview
+ChatGPT Plus,نماذج سلسلة GPT-5,OpenAI,اشتراك في واجهة ChatGPT مع أداة تحليل بيانات بلغة Python ووضع وكيل يتصفح الويب؛ نفّذ الخطة مرحليًا ومهمة التحقق.,https://openai.com/index/gpt-5-system-card/
+GPT-6 Astra,GPT-6 Astra,OpenAI,نموذج وكيلي موجه للعمل المهني متعدد الخطوات واستخدام الحاسوب؛ نفّذ مهمة التحقق من 14 متغيرًا.,https://openai.com/index/gpt-6-astra-next-generation-work/
+Gemini,Gemini 3 Pro,Google DeepMind,نموذج متعدد الوسائط بنيته مزيج خبراء متفرق؛ استُخدم في جمع القائمة الأولية وفي تنفيذ الخطة الطويلة.,https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf
+DeepSeek,DeepSeek-V4-Flash,DeepSeek,نموذج مفتوح الأوزان بمزيج خبراء وسياق يصل إلى مليون رمز؛ عمل داخل وكيل OpenCode.,https://arxiv.org/abs/2606.19348
+OpenCode,وكيل مفتوح المصدر,مشروع OpenCode,وكيل برمجي يعمل في الطرفية ويرتبط بأي نموذج؛ نفّذ الخطة مرحليًا ومهمة التحقق وجمع معلومات التحليل البنيوي.,https://opencode.ai/docs/tools/
+Devin,غير معلن من الشركة,Cognition,وكيل برمجي مستقل يعمل في بيئة حوسبة معزولة فيها طرفية ومتصفح؛ نفّذ الخطة كاملة مستقلًا.,https://cognition.ai/blog/introducing-devin
