@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مستكشف جينات العقم الذكري</title>
+<link rel="icon" href="img/bg/emblem.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg"></div><div class="bg drift"></div>
+
+<header class="hero" id="top">
+  <button class="guide-tab" id="guideBtn"><span class="i">i</span><span data-t="guide"></span></button>
+  <h1 data-t="title"></h1>
+  <p data-t="subtitle"></p>
+  <div class="tools">
+    <button class="btn" id="langBtn"></button>
+    <div class="search"><input id="q" type="search" autocomplete="off"><div class="results" id="qres"></div></div>
+        <button class="btn" id="archBtn" data-t="archive"></button>
+  </div>
+</header>
+
+<nav class="sections" id="nav">
+  <a href="#karyo" data-t="nav_karyo"></a><a href="#genes" data-t="nav_genes"></a><a href="#lab" data-t="nav_lab"></a>
+  <a href="#stats" data-t="nav_stats"></a><a href="#gallery" data-t="nav_gallery"></a><a href="#links" data-t="nav_links"></a>
+</nav>
+
+<main>
+  <section id="karyo">
+    <h2 data-t="karyo_h"></h2>
+    <div class="kpis" id="kpis"></div>
+    <div class="karyo" id="karyoRow"></div>
+    <div class="chrom-panel" id="chromPanel"></div>
+  </section>
+
+  <section id="genes">
+    <h2 data-t="genes_h"></h2>
+    <div class="genes" id="geneGrid"></div>
+  </section>
+
+  <section id="lab">
+    <h2 data-t="lab_h"></h2>
+    <div class="controls" id="labCtl"></div>
+    <div class="lab-top"><div id="labFunnel"></div><div id="labKpi"></div></div>
+    <div class="scroll" id="labTable"></div>
+    <div class="interp" id="labInterp"></div>
+  </section>
+
+  <section id="stats">
+    <h2 data-t="stats_h"></h2>
+    <div class="stabs" id="statTabs"></div>
+    <div id="statBody"></div>
+  </section>
+
+  <section id="gallery">
+    <h2 data-t="gal_h"></h2>
+    <div class="controls" id="galCtl"></div>
+    <div class="gal" id="galGrid"></div>
+  </section>
+
+  <section id="links">
+    <h2 data-t="links_h"></h2>
+    <div class="links" id="linkGrid"></div>
+  </section>
+</main>
+<footer data-t="footer"></footer>
+
+<div class="tip" id="tip"></div>
+<div class="portal-back" id="portalBack"><div class="portal" id="portal"></div></div>
+<aside class="drawer" id="drawer"><header><h3 data-t="archive"></h3><button class="close" id="drawerClose">✕</button></header><div class="dbody" id="drawerBody"></div></aside>
+<div class="lightbox" id="lightbox"><button class="nav" id="lbPrev" style="left:10px">‹</button><img id="lbImg" alt=""><div class="cap" id="lbCap"></div><button class="nav" id="lbNext" style="right:10px">›</button></div>
+<div class="guide-back" id="guideBack"></div>
+<aside class="guide" id="guide"></aside>
+
+<script src="data/data.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
