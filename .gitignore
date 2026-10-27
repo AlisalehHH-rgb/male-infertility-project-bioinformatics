@@ -1,4 +1,4 @@
-# large raw downloads are NOT stored in git (see data/README.md for the official sources)
+# large raw downloads are NOT stored in git (see data2/README.md for the official sources)
 raw/
 raw_fresh/
 *.gz
