@@ -1,0 +1,10 @@
+﻿الأداة,الإصدار,الاستخدام,المصدر
+Python,3.15.0,لغة البرمجة التي نُفذت بها الاختبارات والتحليلات على Windows 10 (64 بت).,https://www.python.org/downloads/
+statsmodels,0.15.0,اختبار Cochran's Q، واختبار McNemar، وتصحيح Holm، وفواصل Wilson.,https://pypi.org/project/statsmodels/
+SciPy,1.18.1,الاختبار الثنائي الدقيق المستخدم في McNemar.,https://pypi.org/project/scipy/
+NumPy,2.5.4,إعادة المعاينة العنقودية (Bootstrap) بالبذرة 20261012، والعمليات العددية.,https://pypi.org/project/numpy/
+pandas,3.0.6,بناء جداول العضوية، وحساب Jaccard، والنسب الوصفية، والتحليل الموحد القاعدة.,https://pypi.org/project/pandas/
+Matplotlib,3.11.2,رسم المخططات الإحصائية.,https://pypi.org/project/matplotlib/
+hashlib,مضمنة في Python,حساب البصمات الرقمية SHA-256 لتدقيق تطابق الملفات.,https://docs.python.org/3/library/hashlib.html
+Microsoft Excel,Microsoft 365,مصفوفة الأدلة، ومعادلات INDEX/MATCH وCOUNTIFS للنسب والتوزيعات الوصفية.,https://support.microsoft.com/excel
+الوحدة الإحصائية في الموقع,JavaScript (ES2020),إعادة حساب الاختبارات نفسها في المتصفح للعرض التفاعلي، بعد مطابقتها مع قيم Python.,—

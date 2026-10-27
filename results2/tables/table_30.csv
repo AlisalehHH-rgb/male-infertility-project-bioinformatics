@@ -1,0 +1,10 @@
+﻿المجموعة,الزوج,المتغير نفسه,متغير مختلف في الجين نفسه,جين ممثل لدى أداة واحدة
+H,Claude – Devin,15,2,1
+H,Claude – ChatGPT Plus,6,5,7
+H,Devin – ChatGPT Plus,6,5,6
+C,Claude – Devin,15,2,1
+C,Claude – ChatGPT Plus,5,5,8
+C,Devin – ChatGPT Plus,5,5,7
+M,Claude – Devin,14,0,4
+M,Claude – ChatGPT Plus,7,1,10
+M,Devin – ChatGPT Plus,7,1,7
