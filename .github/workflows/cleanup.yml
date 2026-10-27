@@ -1,0 +1,32 @@
+name: Cleanup misplaced files
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove misplaced and duplicate files
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r --quiet --ignore-unmatch \
+            tables tables1 tables2 tables3 \
+            figures1 figures2 figures3 \
+            data docs src statistics structural_analysis thesis \
+            track1_galaxy_vep track3_ai_tools website \
+            website2/chimerax website2/pymol
+          git rm --quiet --ignore-unmatch "README (essential) .md"
+          for f in website2/*.jpg; do
+            if [ -f "$f" ]; then git rm --quiet --ignore-unmatch "$f"; fi
+          done
+          git rm --quiet --ignore-unmatch .github/workflows/cleanup.yml || true
+          if git diff --cached --quiet; then
+            echo "Nothing to remove"
+          else
+            git commit -m "Remove misplaced duplicates and legacy folders"
+            git push
+          fi
